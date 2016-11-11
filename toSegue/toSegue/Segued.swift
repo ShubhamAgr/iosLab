@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Segued: UIViewController {
+class Segued: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
     override func viewDidLoad() {
@@ -22,7 +22,19 @@ class Segued: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     var username:String?
-
+    var countries:[String]=["A","B"]
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return countries.count
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("rowcell",forIndexPath:indexPath)
+        cell.textLabel?.text=countries[indexPath.row]
+        return cell
+    }
     /*
     // MARK: - Navigation
 
