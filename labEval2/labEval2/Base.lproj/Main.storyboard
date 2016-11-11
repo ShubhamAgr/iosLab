@@ -62,7 +62,7 @@
         <!--Student View-->
         <scene sceneID="ztL-sm-gPW">
             <objects>
-                <viewController id="IsR-ig-Taw" customClass="StudentView" customModule="ResultsV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id_one" id="IsR-ig-Taw" customClass="StudentView" customModule="ResultsV" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fYv-hM-gD4"/>
                         <viewControllerLayoutGuide type="bottom" id="S0P-Zn-35I"/>
@@ -214,7 +214,7 @@
         <!--Tax Calculator View-->
         <scene sceneID="okI-FJ-bgi">
             <objects>
-                <viewController id="H7C-zZ-4cm" customClass="TaxCalculatorView" customModule="TaxCalcV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id_two" id="H7C-zZ-4cm" customClass="TaxCalculatorView" customModule="TaxCalcV" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eKt-xJ-uvY"/>
                         <viewControllerLayoutGuide type="bottom" id="NNg-8q-rzG"/>
@@ -248,7 +248,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gV-5U-MfV">
-                                <rect key="frame" x="20" y="182" width="280" height="30"/>
+                                <rect key="frame" x="20" y="181" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>

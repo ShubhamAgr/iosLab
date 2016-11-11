@@ -37,7 +37,7 @@ class StudentView: UIViewController {
     
    
     @IBAction func resultCalculate(sender: AnyObject) {
-        self.performSegueWithIdentifier("gradeV", sender: self)
+//        self.performSegueWithIdentifier("gradeV", sender: self)
         /*override func prepareForSegue(segue:UIStoryboardSegue,Sender:AnyObject?){
            
             let gsum = segue.destinationViewController as! GradeSummary

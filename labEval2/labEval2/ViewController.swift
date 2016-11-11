@@ -27,44 +27,53 @@ class ViewController: UIViewController {
     
 
     @IBAction func LoginButton(sender: AnyObject) {
-        if(username.text == "student") {
-            if(password.text==""){
-                let alert1 = UIAlertController(title:"abc",message:"password is nill",preferredStyle: .Alert)
-                alert1.addAction(UIAlertAction(title:"cancel",style: .Default,handler: nil))
-                self.performSegueWithIdentifier("ResultsV", sender:self)
-                }
-            
-            
-         
-
+//        if(username.text == "student") {
+//            if(password.text==""){
+//                let alert1 = UIAlertController(title:"abc",message:"password is nill",preferredStyle: .Alert)
+//                alert1.addAction(UIAlertAction(title:"cancel",style: .Default,handler: nil))
+//                self.performSegueWithIdentifier("ResultsV", sender:self)
+//                }
+//            
+//            
+//         
+//
+//        
+//        
+//        }else if(username.text == "bman") {
+//            if(password.text==""){
+//                
+//                let alert1 = UIAlertController(title:"abc",message:"password is nill",preferredStyle: .Alert)
+//                alert1.addAction(UIAlertAction(title:"cancel",style: .Default,handler: nil))
+//            
+//            }else if(password.text=="B"){
+//            self.performSegueWithIdentifier("ResultsV", sender:self)
+//            }else{
+//                let alert1 = UIAlertController(title:"Wrong Password",message:"your password is wrong",preferredStyle: .Alert)
+//                alert1.addAction(UIAlertAction(title:"cancel",style: .Default,handler: nil))
+//                
+//            
+//            }
+//        
+//        
+//        
+//        }else if(username.text=="") {
+//        
+//        
+//        
+//        }else{
+//        
+//        
+//        
+//        }
+//      code for alert......................................................
+//        let alert = UIAlertController(title:"abcdef",message: "hi sdjfsdf",preferredStyle:.Alert)
+//        alert.addAction(UIAlertAction(title: "sfadas",style: .Default,handler: nil))
+//        self.presentViewController(alert, animated: true, completion: nil)
         
-        
-        }else if(username.text == "bman") {
-            if(password.text==""){
-                
-                let alert1 = UIAlertController(title:"abc",message:"password is nill",preferredStyle: .Alert)
-                alert1.addAction(UIAlertAction(title:"cancel",style: .Default,handler: nil))
-            
-            }else if(password.text=="B"){
-            self.performSegueWithIdentifier("ResultsV", sender:self)
-            }else{
-                let alert1 = UIAlertController(title:"Wrong Password",message:"your password is wrong",preferredStyle: .Alert)
-                alert1.addAction(UIAlertAction(title:"cancel",style: .Default,handler: nil))
-                
-            
-            }
-        
-        
-        
-        }else if(username.text=="") {
-        
-        
-        
-        }else{
-        
-        
-        
-        }
+        //......................................................................//
+    
+self.performSegueWithIdentifier("idx", sender: self)
+    
     
     }
 
